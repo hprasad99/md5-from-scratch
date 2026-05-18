@@ -6,11 +6,6 @@ Usage:
     echo -n "hello" | python md5.py
 """
 
-import struct
-import math
-import sys
-
-
 # Per-round shift amounts
 S = [
     7,
@@ -75,5 +70,6 @@ S = [
     21,
     6,
     10,
-    15,  21,
+    15,
+    21,
 ]
